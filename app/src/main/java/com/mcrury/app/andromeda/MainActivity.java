@@ -2,6 +2,7 @@ package com.mcrury.app.andromeda;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,6 +14,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Menunjukkan lifecyle activity melalui Toast
         Toast.makeText(this, "Ini event onCreate", Toast.LENGTH_SHORT).show();
+
+        // Menunjukkan lifecyle activity melalui Log (lihat di panel Logcat)
+        Log.d("TAG_ACTIVITY", "Ini event onCreate");
     }
 
     @Override
@@ -20,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
         Toast.makeText(this, "Ini event onStart", Toast.LENGTH_SHORT).show();
+
+        Log.d("TAG_ACTIVITY", "Ini event onStart");
     }
 
     @Override
@@ -27,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
 
         Toast.makeText(this, "Ini event onResume", Toast.LENGTH_SHORT).show();
+
+        Log.d("TAG_ACTIVITY", "Ini event onResume");
     }
 
     @Override
@@ -34,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
 
         Toast.makeText(this, "Ini event onPause", Toast.LENGTH_SHORT).show();
+
+        Log.d("TAG_ACTIVITY", "Ini event onPause");
     }
 
     @Override
@@ -41,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
 
         Toast.makeText(this, "Ini event onStop", Toast.LENGTH_SHORT).show();
+
+        Log.d("TAG_ACTIVITY", "Ini event onStop");
     }
 
     @Override
@@ -48,5 +60,7 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
 
         Toast.makeText(this, "Ini event onDestroy", Toast.LENGTH_SHORT).show();
+
+        Log.d("TAG_ACTIVITY", "Ini event onDestroy");
     }
 }
