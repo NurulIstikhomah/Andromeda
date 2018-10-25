@@ -12,55 +12,46 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Menunjukkan lifecyle activity melalui Toast
-        Toast.makeText(this, "Ini event onCreate", Toast.LENGTH_SHORT).show();
-
-        // Menunjukkan lifecyle activity melalui Log (lihat di panel Logcat)
-        Log.d("TAG_ACTIVITY", "Ini event onCreate");
+        LogData("Ini event onCreate");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
 
-        Toast.makeText(this, "Ini event onStart", Toast.LENGTH_SHORT).show();
-
-        Log.d("TAG_ACTIVITY", "Ini event onStart");
+        LogData("Ini event onStart");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
 
-        Toast.makeText(this, "Ini event onResume", Toast.LENGTH_SHORT).show();
-
-        Log.d("TAG_ACTIVITY", "Ini event onResume");
+        LogData("Ini event onResume");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
 
-        Toast.makeText(this, "Ini event onPause", Toast.LENGTH_SHORT).show();
-
-        Log.d("TAG_ACTIVITY", "Ini event onPause");
+        LogData("Ini event onPause");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
 
-        Toast.makeText(this, "Ini event onStop", Toast.LENGTH_SHORT).show();
-
-        Log.d("TAG_ACTIVITY", "Ini event onStop");
+        LogData("Ini event onStop");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
 
-        Toast.makeText(this, "Ini event onDestroy", Toast.LENGTH_SHORT).show();
+        LogData("Ini event onDestroy");
+    }
 
-        Log.d("TAG_ACTIVITY", "Ini event onDestroy");
+    void LogData(String data) {
+        Toast.makeText(MainActivity.this, data, Toast.LENGTH_SHORT).show();
+        Log.d("TAG_ACTIVITY", data);
     }
 }
