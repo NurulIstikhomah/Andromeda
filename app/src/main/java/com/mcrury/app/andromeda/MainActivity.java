@@ -2,9 +2,7 @@ package com.mcrury.app.andromeda;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,28 +11,42 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Mengubah TextView yang sudah ada di layout xml
-        TextView t = findViewById(R.id.tv);
-        t.setText("Ini adalah contoh men-set isi TextView dari file java");
+        // Menunjukkan lifecyle activity melalui Toast
+        Toast.makeText(this, "Ini event onCreate", Toast.LENGTH_SHORT).show();
+    }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
 
-        // Membuat ImageView programmatically
-        ImageView gambarku = new ImageView(this);
-        gambarku.setImageResource(R.drawable.android_png_hd);
+        Toast.makeText(this, "Ini event onStart", Toast.LENGTH_SHORT).show();
+    }
 
-        // Membuat LinearLayout
-        LinearLayout layoutku = new LinearLayout(this);
-        layoutku.setOrientation(LinearLayout.VERTICAL);
+    @Override
+    protected void onResume() {
+        super.onResume();
 
-        layoutku.setLayoutParams(
-                new LinearLayout.LayoutParams(
-                        LinearLayout.LayoutParams.MATCH_PARENT,
-                        LinearLayout.LayoutParams.MATCH_PARENT )
-        );
+        Toast.makeText(this, "Ini event onResume", Toast.LENGTH_SHORT).show();
+    }
 
-        layoutku.addView(gambarku);
+    @Override
+    protected void onPause() {
+        super.onPause();
 
-        setContentView(layoutku);
+        Toast.makeText(this, "Ini event onPause", Toast.LENGTH_SHORT).show();
+    }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        Toast.makeText(this, "Ini event onStop", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        Toast.makeText(this, "Ini event onDestroy", Toast.LENGTH_SHORT).show();
     }
 }

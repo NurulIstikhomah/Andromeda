@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">01 Pengenalan</string>
+    <string name="app_name">02 Activity Lifecycle</string>
     <string name="textHalo">Halo gan</string>
 </resources>
