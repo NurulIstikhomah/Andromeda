@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- https://uigradients.com/#Skyline -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape>
             <gradient android:angle="90"
-                android:endColor="#9b0493"
-                android:startColor="#38068f"
+                android:startColor="@color/primary"
+                android:endColor="@color/primary_dark"
                 android:type="linear" />
         </shape>
     </item>
