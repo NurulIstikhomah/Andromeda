@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,7 +18,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void klikLogin(View view) {
-        Intent intent = new Intent(this, LayarHome.class);
-        startActivity(intent);
+        Intent intentpengirim = new Intent(this, LayarHome.class);
+
+        EditText et_email = (EditText)findViewById(R.id.input_email);
+        String inputemail = et_email.getText().toString();
+
+        intentpengirim.putExtra("EXTRA_EMAIL",inputemail);
+
+        startActivity(intentpengirim);
     }
 }
