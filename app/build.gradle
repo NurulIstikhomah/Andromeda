@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.mcrury.app02.andromeda"
+        applicationId "com.mcrury.app03.andromeda"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
