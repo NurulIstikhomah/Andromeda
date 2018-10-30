@@ -25,4 +25,11 @@
         <item name="android:letterSpacing">0</item>
     </style>
 
+    <style name="subJudul" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/euclid_circular_bold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
 </resources>

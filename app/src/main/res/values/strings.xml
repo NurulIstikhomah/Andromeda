@@ -1,9 +1,14 @@
 <resources>
-    <string name="app_name">03 Intent</string>
+    <string name="app_name">04 List View</string>
     <string name="textHalo">Halo gan</string>
     <string name="et_email">Email</string>
     <string name="et_password">Password</string>
     <string name="et_loginbutton">Login</string>
     <string name="et_registerbutton">Register</string>
-    <string name="logo_polinema">Logo Polinema</string>
+    <string name="logo_aplikasi">Sineholic</string>
+    <string-array name="kategori_data">
+        <item>Aksi</item>
+        <item>Drama</item>
+        <item>Horor</item>
+    </string-array>
 </resources>
