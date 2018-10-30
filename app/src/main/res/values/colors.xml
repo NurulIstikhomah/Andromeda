@@ -5,6 +5,7 @@
     <color name="primary_darker">#000000</color>
     <color name="accent">#ffd700</color>
     <color name="accent_dark">#ff9100</color>
+    <color name="secondary">#ff0266</color>
 
     <color name="black">#000000</color>
     <color name="jet">#222222</color>
