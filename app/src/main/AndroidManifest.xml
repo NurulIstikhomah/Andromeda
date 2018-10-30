@@ -22,8 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LayarHome" />
-        <activity android:name=".LayarKategori"></activity>
+        <activity android:name=".LayarHome" android:label="@string/judul_activity_kategori"/>
+        <activity android:name=".LayarKategori" android:label="@string/judul_activity_list" />
+        <activity android:name=".LayarDetail" android:label="@string/judul_activity_detail" />
     </application>
 
 </manifest>

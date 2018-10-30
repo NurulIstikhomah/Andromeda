@@ -6,6 +6,10 @@
     <string name="et_loginbutton">Login</string>
     <string name="et_registerbutton">Register</string>
     <string name="logo_aplikasi">Sineholic</string>
+    <string name="sinopsis">Sinopsis</string>
+    <string name="judul_activity_kategori">Kategori Sinetron</string>
+    <string name="judul_activity_list">List Sinetron</string>
+    <string name="judul_activity_detail">Detail Sinetron</string>
     <string-array name="kategori_data">
         <item>Aksi</item>
         <item>Drama</item>

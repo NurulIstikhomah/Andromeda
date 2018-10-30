@@ -36,7 +36,7 @@
             android:layout_toEndOf="@+id/tv_subJudul"
             android:text="Sinetron"
             android:textAlignment="center"
-            android:textAppearance="@style/Judul"
+            android:textAppearance="@style/JudulBesar"
             android:textColor="@color/white" />
     </RelativeLayout>
 

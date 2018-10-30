@@ -18,17 +18,38 @@
         <item name="colorControlHighlight">@color/iron</item>
     </style>
 
-    <style name="Judul" parent="TextAppearance.MaterialComponents.Headline3">
+    <style name="JudulBesar" parent="TextAppearance.MaterialComponents.Headline1">
         <item name="fontFamily">@font/euclid_circular_bold</item>
-        <item name="android:textStyle">normal</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textSize">42sp</item>
         <item name="android:letterSpacing">0</item>
     </style>
 
-    <style name="subJudul" parent="TextAppearance.MaterialComponents.Headline3">
+    <style name="Judul" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/euclid_circular_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">33sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="subJudul" parent="TextAppearance.MaterialComponents.Subtitle1">
         <item name="fontFamily">@font/euclid_circular_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="subJudul2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/euclid_circular_medium</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="teksbody" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/euclid_circular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:letterSpacing">0</item>
     </style>
 
