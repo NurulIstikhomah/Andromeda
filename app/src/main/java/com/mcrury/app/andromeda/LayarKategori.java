@@ -7,9 +7,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 
@@ -33,40 +33,24 @@ public class LayarKategori extends AppCompatActivity {
         // ArrayAdapter<SinetronModel> listAdapter = new ArrayAdapter<>(
         //        this, android.R.layout.simple_list_item_1, SinetronModel.drama);
 
-        List<HashMap<String, String>> aList = new ArrayList<HashMap<String, String>>();
-
+        List<SinetronModel> aList = new ArrayList<>();
         // Iterasi untuk setiap item dari data sinetron
         for (int i = 0; i < SinetronModel.drama.length; i++) {
             // Mendapatkan data dari class SinetronModel
-            SinetronModel sinetron = SinetronModel.drama[i];
-
-            // Mendapatkan deskripsi singkat, dengan memotong 50 karakter dari deskripsi
-            String deskripsi_singkat = sinetron.getDeskripsi().substring(0,50);
-
-            // Memasangkan nama, deskripsi, dan image ke key sementara
-            HashMap<String, String> hm = new HashMap<String, String>();
-            hm.put("item_judul", sinetron.getNama());
-            hm.put("item_deskripsi", deskripsi_singkat);
-            hm.put("item_image", Integer.toString(sinetron.getImageResourceId()));
-            aList.add(hm);
+            aList.add(SinetronModel.drama[i]);
         }
-        // Mapping dari HashMap untuk dihubungkan dengan TextView di layout (sesuai id TextView-nya)
-        String[] dari = {"item_image", "item_judul", "item_deskripsi"};
-        int[] ke = {R.id.listview_image, R.id.listview_item_judul, R.id.listview_item_deskripsi};
-
-        // Memasukkan pasangan data-TextView ke ke layout list_item_layout
-        SimpleAdapter listAdapter = new SimpleAdapter(this, aList, R.layout.list_item_layout,
-                dari, ke);
 
         // Memanggil ListView
         ListView listSinetron = (ListView) findViewById(R.id.list_data);
+        SinetronAdapter listAdapter = new SinetronAdapter(this, R.layout.list_item_layout,
+                aList);
 
         // Memasukkan array SinetronModel ke ListView
         listSinetron.setAdapter(listAdapter);
 
         // Membuat listener on click setiap item untuk menuju layar detail
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener(){
-            public void onItemClick(AdapterView<?> listDrinks, View itemView, int position, long
+            public void onItemClick(AdapterView<?> listSinetron, View itemView, int position, long
                     id) {
 
                 // Passing data ke intent
