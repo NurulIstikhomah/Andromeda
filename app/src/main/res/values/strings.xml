@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">04 List View</string>
+    <string name="app_name">05 Recycler View</string>
     <string name="textHalo">Halo gan</string>
     <string name="et_email">Email</string>
     <string name="et_password">Password</string>

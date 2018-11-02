@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:background="@color/secondary"
     tools:context="com.mcrury.app.andromeda.LayarKategori">
-    <ListView
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/list_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

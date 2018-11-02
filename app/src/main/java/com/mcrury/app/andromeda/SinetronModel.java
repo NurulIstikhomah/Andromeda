@@ -21,6 +21,174 @@ public class SinetronModel {
                     " hobinya naik haji. Setelah naik haji, istrinya jadi pingin " +
                     "ikut2an naik haji, abis itu mertuanya jadi ikut2an, abis itu tetangga2 " +
                     "satu persatu jadi ikut2an. Itulah kenapa episodenya panjang sekali.", R
+                    .drawable.img_3),
+            new SinetronModel("Tersandung", "Tersandung merupakan sinetron terpanjang yang pernah" +
+                    " diputar yaitu selama 350 tahun. Sinetron ini mengisahkan seorang waria yang" +
+                    " selalu tersandung saat berjalan, entah itu tersandung batu, tersandung " +
+                    "kayu, tersandung kabel, tersandung polisi tidur, dll. ", R.drawable.img_1),
+            new SinetronModel("Putri Yang Diincar", "Putri Yang Diincar merupakan sinetron dengan" +
+                    " durasi tayang selama 3 jam, dan 3 episode setiap hari setelah makan pagi, siang dan" +
+                    " malam akibat penonton ketagihan. Jika terlambat tayang sekali saja, akan " +
+                    "terjadi kesurupan massal.",
+                    R.drawable.img_2),
+            new SinetronModel("Tukang Haji Naik Bubur", "Menceritakan tentang seorang tukang yang" +
+                    " hobinya naik haji. Setelah naik haji, istrinya jadi pingin " +
+                    "ikut2an naik haji, abis itu mertuanya jadi ikut2an, abis itu tetangga2 " +
+                    "satu persatu jadi ikut2an. Itulah kenapa episodenya panjang sekali.", R
+                    .drawable.img_3),
+            new SinetronModel("Tersandung", "Tersandung merupakan sinetron terpanjang yang pernah" +
+                    " diputar yaitu selama 350 tahun. Sinetron ini mengisahkan seorang waria yang" +
+                    " selalu tersandung saat berjalan, entah itu tersandung batu, tersandung " +
+                    "kayu, tersandung kabel, tersandung polisi tidur, dll. ", R.drawable.img_1),
+            new SinetronModel("Putri Yang Diincar", "Putri Yang Diincar merupakan sinetron dengan" +
+                    " durasi tayang selama 3 jam, dan 3 episode setiap hari setelah makan pagi, siang dan" +
+                    " malam akibat penonton ketagihan. Jika terlambat tayang sekali saja, akan " +
+                    "terjadi kesurupan massal.",
+                    R.drawable.img_2),
+            new SinetronModel("Tukang Haji Naik Bubur", "Menceritakan tentang seorang tukang yang" +
+                    " hobinya naik haji. Setelah naik haji, istrinya jadi pingin " +
+                    "ikut2an naik haji, abis itu mertuanya jadi ikut2an, abis itu tetangga2 " +
+                    "satu persatu jadi ikut2an. Itulah kenapa episodenya panjang sekali.", R
+                    .drawable.img_3),
+            new SinetronModel("Tersandung", "Tersandung merupakan sinetron terpanjang yang pernah" +
+                    " diputar yaitu selama 350 tahun. Sinetron ini mengisahkan seorang waria yang" +
+                    " selalu tersandung saat berjalan, entah itu tersandung batu, tersandung " +
+                    "kayu, tersandung kabel, tersandung polisi tidur, dll. ", R.drawable.img_1),
+            new SinetronModel("Putri Yang Diincar", "Putri Yang Diincar merupakan sinetron dengan" +
+                    " durasi tayang selama 3 jam, dan 3 episode setiap hari setelah makan pagi, siang dan" +
+                    " malam akibat penonton ketagihan. Jika terlambat tayang sekali saja, akan " +
+                    "terjadi kesurupan massal.",
+                    R.drawable.img_2),
+            new SinetronModel("Tukang Haji Naik Bubur", "Menceritakan tentang seorang tukang yang" +
+                    " hobinya naik haji. Setelah naik haji, istrinya jadi pingin " +
+                    "ikut2an naik haji, abis itu mertuanya jadi ikut2an, abis itu tetangga2 " +
+                    "satu persatu jadi ikut2an. Itulah kenapa episodenya panjang sekali.", R
+                    .drawable.img_3),
+            new SinetronModel("Tersandung", "Tersandung merupakan sinetron terpanjang yang pernah" +
+                    " diputar yaitu selama 350 tahun. Sinetron ini mengisahkan seorang waria yang" +
+                    " selalu tersandung saat berjalan, entah itu tersandung batu, tersandung " +
+                    "kayu, tersandung kabel, tersandung polisi tidur, dll. ", R.drawable.img_1),
+            new SinetronModel("Putri Yang Diincar", "Putri Yang Diincar merupakan sinetron dengan" +
+                    " durasi tayang selama 3 jam, dan 3 episode setiap hari setelah makan pagi, siang dan" +
+                    " malam akibat penonton ketagihan. Jika terlambat tayang sekali saja, akan " +
+                    "terjadi kesurupan massal.",
+                    R.drawable.img_2),
+            new SinetronModel("Tukang Haji Naik Bubur", "Menceritakan tentang seorang tukang yang" +
+                    " hobinya naik haji. Setelah naik haji, istrinya jadi pingin " +
+                    "ikut2an naik haji, abis itu mertuanya jadi ikut2an, abis itu tetangga2 " +
+                    "satu persatu jadi ikut2an. Itulah kenapa episodenya panjang sekali.", R
+                    .drawable.img_3),
+            new SinetronModel("Tersandung", "Tersandung merupakan sinetron terpanjang yang pernah" +
+                    " diputar yaitu selama 350 tahun. Sinetron ini mengisahkan seorang waria yang" +
+                    " selalu tersandung saat berjalan, entah itu tersandung batu, tersandung " +
+                    "kayu, tersandung kabel, tersandung polisi tidur, dll. ", R.drawable.img_1),
+            new SinetronModel("Putri Yang Diincar", "Putri Yang Diincar merupakan sinetron dengan" +
+                    " durasi tayang selama 3 jam, dan 3 episode setiap hari setelah makan pagi, siang dan" +
+                    " malam akibat penonton ketagihan. Jika terlambat tayang sekali saja, akan " +
+                    "terjadi kesurupan massal.",
+                    R.drawable.img_2),
+            new SinetronModel("Tukang Haji Naik Bubur", "Menceritakan tentang seorang tukang yang" +
+                    " hobinya naik haji. Setelah naik haji, istrinya jadi pingin " +
+                    "ikut2an naik haji, abis itu mertuanya jadi ikut2an, abis itu tetangga2 " +
+                    "satu persatu jadi ikut2an. Itulah kenapa episodenya panjang sekali.", R
+                    .drawable.img_3),
+            new SinetronModel("Tersandung", "Tersandung merupakan sinetron terpanjang yang pernah" +
+                    " diputar yaitu selama 350 tahun. Sinetron ini mengisahkan seorang waria yang" +
+                    " selalu tersandung saat berjalan, entah itu tersandung batu, tersandung " +
+                    "kayu, tersandung kabel, tersandung polisi tidur, dll. ", R.drawable.img_1),
+            new SinetronModel("Putri Yang Diincar", "Putri Yang Diincar merupakan sinetron dengan" +
+                    " durasi tayang selama 3 jam, dan 3 episode setiap hari setelah makan pagi, siang dan" +
+                    " malam akibat penonton ketagihan. Jika terlambat tayang sekali saja, akan " +
+                    "terjadi kesurupan massal.",
+                    R.drawable.img_2),
+            new SinetronModel("Tukang Haji Naik Bubur", "Menceritakan tentang seorang tukang yang" +
+                    " hobinya naik haji. Setelah naik haji, istrinya jadi pingin " +
+                    "ikut2an naik haji, abis itu mertuanya jadi ikut2an, abis itu tetangga2 " +
+                    "satu persatu jadi ikut2an. Itulah kenapa episodenya panjang sekali.", R
+                    .drawable.img_3),
+            new SinetronModel("Tersandung", "Tersandung merupakan sinetron terpanjang yang pernah" +
+                    " diputar yaitu selama 350 tahun. Sinetron ini mengisahkan seorang waria yang" +
+                    " selalu tersandung saat berjalan, entah itu tersandung batu, tersandung " +
+                    "kayu, tersandung kabel, tersandung polisi tidur, dll. ", R.drawable.img_1),
+            new SinetronModel("Putri Yang Diincar", "Putri Yang Diincar merupakan sinetron dengan" +
+                    " durasi tayang selama 3 jam, dan 3 episode setiap hari setelah makan pagi, siang dan" +
+                    " malam akibat penonton ketagihan. Jika terlambat tayang sekali saja, akan " +
+                    "terjadi kesurupan massal.",
+                    R.drawable.img_2),
+            new SinetronModel("Tukang Haji Naik Bubur", "Menceritakan tentang seorang tukang yang" +
+                    " hobinya naik haji. Setelah naik haji, istrinya jadi pingin " +
+                    "ikut2an naik haji, abis itu mertuanya jadi ikut2an, abis itu tetangga2 " +
+                    "satu persatu jadi ikut2an. Itulah kenapa episodenya panjang sekali.", R
+                    .drawable.img_3),
+            new SinetronModel("Tersandung", "Tersandung merupakan sinetron terpanjang yang pernah" +
+                    " diputar yaitu selama 350 tahun. Sinetron ini mengisahkan seorang waria yang" +
+                    " selalu tersandung saat berjalan, entah itu tersandung batu, tersandung " +
+                    "kayu, tersandung kabel, tersandung polisi tidur, dll. ", R.drawable.img_1),
+            new SinetronModel("Putri Yang Diincar", "Putri Yang Diincar merupakan sinetron dengan" +
+                    " durasi tayang selama 3 jam, dan 3 episode setiap hari setelah makan pagi, siang dan" +
+                    " malam akibat penonton ketagihan. Jika terlambat tayang sekali saja, akan " +
+                    "terjadi kesurupan massal.",
+                    R.drawable.img_2),
+            new SinetronModel("Tukang Haji Naik Bubur", "Menceritakan tentang seorang tukang yang" +
+                    " hobinya naik haji. Setelah naik haji, istrinya jadi pingin " +
+                    "ikut2an naik haji, abis itu mertuanya jadi ikut2an, abis itu tetangga2 " +
+                    "satu persatu jadi ikut2an. Itulah kenapa episodenya panjang sekali.", R
+                    .drawable.img_3),
+            new SinetronModel("Tersandung", "Tersandung merupakan sinetron terpanjang yang pernah" +
+                    " diputar yaitu selama 350 tahun. Sinetron ini mengisahkan seorang waria yang" +
+                    " selalu tersandung saat berjalan, entah itu tersandung batu, tersandung " +
+                    "kayu, tersandung kabel, tersandung polisi tidur, dll. ", R.drawable.img_1),
+            new SinetronModel("Putri Yang Diincar", "Putri Yang Diincar merupakan sinetron dengan" +
+                    " durasi tayang selama 3 jam, dan 3 episode setiap hari setelah makan pagi, siang dan" +
+                    " malam akibat penonton ketagihan. Jika terlambat tayang sekali saja, akan " +
+                    "terjadi kesurupan massal.",
+                    R.drawable.img_2),
+            new SinetronModel("Tukang Haji Naik Bubur", "Menceritakan tentang seorang tukang yang" +
+                    " hobinya naik haji. Setelah naik haji, istrinya jadi pingin " +
+                    "ikut2an naik haji, abis itu mertuanya jadi ikut2an, abis itu tetangga2 " +
+                    "satu persatu jadi ikut2an. Itulah kenapa episodenya panjang sekali.", R
+                    .drawable.img_3),
+            new SinetronModel("Tersandung", "Tersandung merupakan sinetron terpanjang yang pernah" +
+                    " diputar yaitu selama 350 tahun. Sinetron ini mengisahkan seorang waria yang" +
+                    " selalu tersandung saat berjalan, entah itu tersandung batu, tersandung " +
+                    "kayu, tersandung kabel, tersandung polisi tidur, dll. ", R.drawable.img_1),
+            new SinetronModel("Putri Yang Diincar", "Putri Yang Diincar merupakan sinetron dengan" +
+                    " durasi tayang selama 3 jam, dan 3 episode setiap hari setelah makan pagi, siang dan" +
+                    " malam akibat penonton ketagihan. Jika terlambat tayang sekali saja, akan " +
+                    "terjadi kesurupan massal.",
+                    R.drawable.img_2),
+            new SinetronModel("Tukang Haji Naik Bubur", "Menceritakan tentang seorang tukang yang" +
+                    " hobinya naik haji. Setelah naik haji, istrinya jadi pingin " +
+                    "ikut2an naik haji, abis itu mertuanya jadi ikut2an, abis itu tetangga2 " +
+                    "satu persatu jadi ikut2an. Itulah kenapa episodenya panjang sekali.", R
+                    .drawable.img_3),
+            new SinetronModel("Tersandung", "Tersandung merupakan sinetron terpanjang yang pernah" +
+                    " diputar yaitu selama 350 tahun. Sinetron ini mengisahkan seorang waria yang" +
+                    " selalu tersandung saat berjalan, entah itu tersandung batu, tersandung " +
+                    "kayu, tersandung kabel, tersandung polisi tidur, dll. ", R.drawable.img_1),
+            new SinetronModel("Putri Yang Diincar", "Putri Yang Diincar merupakan sinetron dengan" +
+                    " durasi tayang selama 3 jam, dan 3 episode setiap hari setelah makan pagi, siang dan" +
+                    " malam akibat penonton ketagihan. Jika terlambat tayang sekali saja, akan " +
+                    "terjadi kesurupan massal.",
+                    R.drawable.img_2),
+            new SinetronModel("Tukang Haji Naik Bubur", "Menceritakan tentang seorang tukang yang" +
+                    " hobinya naik haji. Setelah naik haji, istrinya jadi pingin " +
+                    "ikut2an naik haji, abis itu mertuanya jadi ikut2an, abis itu tetangga2 " +
+                    "satu persatu jadi ikut2an. Itulah kenapa episodenya panjang sekali.", R
+                    .drawable.img_3),
+            new SinetronModel("Tersandung", "Tersandung merupakan sinetron terpanjang yang pernah" +
+                    " diputar yaitu selama 350 tahun. Sinetron ini mengisahkan seorang waria yang" +
+                    " selalu tersandung saat berjalan, entah itu tersandung batu, tersandung " +
+                    "kayu, tersandung kabel, tersandung polisi tidur, dll. ", R.drawable.img_1),
+            new SinetronModel("Putri Yang Diincar", "Putri Yang Diincar merupakan sinetron dengan" +
+                    " durasi tayang selama 3 jam, dan 3 episode setiap hari setelah makan pagi, siang dan" +
+                    " malam akibat penonton ketagihan. Jika terlambat tayang sekali saja, akan " +
+                    "terjadi kesurupan massal.",
+                    R.drawable.img_2),
+            new SinetronModel("Tukang Haji Naik Bubur", "Menceritakan tentang seorang tukang yang" +
+                    " hobinya naik haji. Setelah naik haji, istrinya jadi pingin " +
+                    "ikut2an naik haji, abis itu mertuanya jadi ikut2an, abis itu tetangga2 " +
+                    "satu persatu jadi ikut2an. Itulah kenapa episodenya panjang sekali.", R
                     .drawable.img_3)
     };
 
