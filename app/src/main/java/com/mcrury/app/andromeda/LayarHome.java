@@ -19,7 +19,7 @@ public class LayarHome extends AppCompatActivity {
         setContentView(R.layout.activity_layar_home);
 
         // Membuat listener on click
-        btnTicketList = findViewById(R.id.btn_utama);
+        btnTicketList = findViewById(R.id.btnListTiket);
         btnTicketList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
