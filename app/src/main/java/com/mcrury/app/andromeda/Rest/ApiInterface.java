@@ -2,6 +2,7 @@ package com.mcrury.app.andromeda.Rest;
 
 import com.mcrury.app.andromeda.Model.GetPembeli;
 import com.mcrury.app.andromeda.Model.GetPembelian;
+import com.mcrury.app.andromeda.Model.GetTiket;
 import com.mcrury.app.andromeda.Model.PostPutDelPembelian;
 
 import okhttp3.MultipartBody;
@@ -69,5 +70,33 @@ public interface ApiInterface {
             @Part("id_pembeli") RequestBody idPembeli,
             @Part("action") RequestBody action);
 
-}
+    /********* TIKET *********/
+    @GET("tiket/available")
+    Call<GetTiket> getTiket();
 
+    @FormUrlEncoded
+    @POST("tiket/all")
+    Call<GetTiket> postTiket(
+            @Field("tujuan") String tujuan,
+            @Field("tanggal_berangkat") String tglBerangkat,
+            @Field("nama_kereta") String namaKereta,
+            @Field("action") String action
+    );
+
+    @FormUrlEncoded
+    @POST("tiket/all")
+    Call<GetTiket> putTiket(
+            @Field("id_tiket") String idTiket,
+            @Field("tujuan") String tujuan,
+            @Field("tanggal_berangkat") String tglBerangkat,
+            @Field("nama_kereta") String namaKereta,
+            @Field("action") String action
+    );
+
+    @FormUrlEncoded
+    @POST("tiket/all")
+    Call<GetTiket> deleteTiket(
+            @Field("id_tiket") String idTiket,
+            @Field("action") String action);
+
+}

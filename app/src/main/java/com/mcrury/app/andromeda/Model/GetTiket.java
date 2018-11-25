@@ -14,13 +14,6 @@ public class GetTiket {
     private List<Tiket> result = null;
 
     /**
-     * No args constructor for use in serialization
-     *
-     */
-    public GetTiket() {
-    }
-
-    /**
      *
      * @param result
      * @param status

@@ -23,7 +23,8 @@ public class LayarHome extends AppCompatActivity {
         btnTicketList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent mIntent = new Intent(getApplicationContext(), LayarListTiket.class);
+                startActivity(mIntent);
             }
         });
 

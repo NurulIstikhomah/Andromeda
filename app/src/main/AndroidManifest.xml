@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.mcrury.app.andromeda">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
@@ -22,11 +26,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LayarHome"
-            android:label="@string/judul_activity_kategori"
-            android:theme="@style/Theme.Design.NoActionBar"/>
-        <activity android:name=".LayarKategori" android:label="@string/judul_activity_list" />
-        <activity android:name=".LayarDetail" android:label="@string/judul_activity_detail" />
+        <activity
+            android:name=".LayarHome"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".LayarListTiket"
+            android:label="List Tiket"></activity>
     </application>
 
 </manifest>
