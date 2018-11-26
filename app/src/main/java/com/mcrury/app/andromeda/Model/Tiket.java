@@ -20,19 +20,34 @@ public class Tiket {
     @Expose
     private String namaKereta;
 
+    // Menambahkan field baru: kuota tiket
+    @SerializedName("kuota")
+    @Expose
+    private String kuota;
+
+    // Menambahkan field baru: harga tiket
+    @SerializedName("harga_tiket")
+    @Expose
+    private String harga;
+
     /**
      *
      * @param tujuan
      * @param namaKereta
      * @param idTiket
      * @param tanggalBerangkat
+     * @param kuota
+     * @param harga
      */
-    public Tiket(String idTiket, String tujuan, String tanggalBerangkat, String namaKereta) {
+    public Tiket(String idTiket, String tujuan, String tanggalBerangkat, String namaKereta, String
+            kuota, String harga) {
         super();
         this.idTiket = idTiket;
         this.tujuan = tujuan;
         this.tanggalBerangkat = tanggalBerangkat;
         this.namaKereta = namaKereta;
+        this.kuota = kuota;
+        this.harga = harga;
     }
 
     public String getIdTiket() {
@@ -84,6 +99,32 @@ public class Tiket {
 
     public Tiket withNamaKereta(String namaKereta) {
         this.namaKereta = namaKereta;
+        return this;
+    }
+
+    public String getKuota() {
+        return kuota;
+    }
+
+    public void setKuota(String kuota) {
+        this.kuota = kuota;
+    }
+
+    public Tiket withKuota(String kuota) {
+        this.kuota = kuota;
+        return this;
+    }
+
+    public String getHarga() {
+        return harga;
+    }
+
+    public void setHarga(String harga) {
+        this.harga = harga;
+    }
+
+    public Tiket withHarga(String harga) {
+        this.harga = harga;
         return this;
     }
 

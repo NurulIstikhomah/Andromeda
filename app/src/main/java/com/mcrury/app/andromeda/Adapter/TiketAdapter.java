@@ -52,6 +52,8 @@ public class TiketAdapter extends RecyclerView.Adapter<TiketAdapter.TiketViewHol
         holder.tvNamaKereta.setText(listTiket.get(position).getNamaKereta());
         holder.tvTujuan.setText(listTiket.get(position).getTujuan());
         holder.tvTglBerangkat.setText(listTiket.get(position).getTanggalBerangkat());
+        holder.tvKuota.setText(listTiket.get(position).getKuota() + " seat");
+        holder.tvHarga.setText(listTiket.get(position).getHarga());
 
     }
 
@@ -61,7 +63,7 @@ public class TiketAdapter extends RecyclerView.Adapter<TiketAdapter.TiketViewHol
     }
 
     public class TiketViewHolder extends RecyclerView.ViewHolder {
-        TextView tvNamaKereta, tvTujuan, tvTglBerangkat;
+        TextView tvNamaKereta, tvTujuan, tvTglBerangkat, tvKuota, tvHarga;
         RecyclerView recyclerView;
 
         public TiketViewHolder(View itemView, final Context mContext) {
@@ -70,6 +72,9 @@ public class TiketAdapter extends RecyclerView.Adapter<TiketAdapter.TiketViewHol
             tvNamaKereta = (TextView) itemView.findViewById(R.id.tvNamaKereta);
             tvTujuan = (TextView) itemView.findViewById(R.id.tvTujuan);
             tvTglBerangkat = (TextView) itemView.findViewById(R.id.tvTglBerangkat);
+            tvKuota = (TextView) itemView.findViewById(R.id.tvKuota);
+            tvHarga = (TextView) itemView.findViewById(R.id.tvHarga);
+
             recyclerView = (RecyclerView) itemView.findViewById(R.id.list_data_tiket);
 
             mApiInterface = ApiClient.getClient().create(ApiInterface.class);

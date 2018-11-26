@@ -42,4 +42,29 @@
         android:textAppearance="@style/teksbody"
         android:textColor="@color/accent_dark" />
 
+    <TextView
+        android:id="@+id/tvKuota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTujuan"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="0dp"
+        android:hint="Kuota"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/teksbody"
+        android:textColor="@color/base" />
+
+    <TextView
+        android:id="@+id/tvHarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNamaKereta"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_primary_bg"
+        android:hint="Harga"
+        android:textAlignment="center"
+        android:textAppearance="@style/subJudul"
+        android:textColor="@color/black" />
+
 </RelativeLayout>
