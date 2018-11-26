@@ -11,7 +11,9 @@ public class Tiket {
     @SerializedName("tujuan")
     @Expose
     private String tujuan;
-    @SerializedName("tanggal_berangkat")
+
+    // Ada perubahan nama field di REST API
+    @SerializedName("tgl_brgkt")
     @Expose
     private String tanggalBerangkat;
     @SerializedName("nama_kereta")

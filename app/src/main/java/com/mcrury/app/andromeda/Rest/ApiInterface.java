@@ -24,7 +24,7 @@ public interface ApiInterface {
     @FormUrlEncoded
     @POST("pembelian/user")
     Call<PostPutDelPembelian> postPembelian
-            (@Field("id_pembelian") String idPembelian, @Field("id_pembeli") String idPembeli,
+            (@Field("id_pembeli") String idPembeli,
              @Field("tanggal_beli") String tanggalBeli, @Field("total_harga") String totalHarga,
              @Field("id_tiket") String idTiket);
 

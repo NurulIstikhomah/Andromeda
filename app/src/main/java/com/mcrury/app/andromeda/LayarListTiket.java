@@ -50,7 +50,9 @@ public class LayarListTiket extends AppCompatActivity {
                 Log.d("GetTiket",String.valueOf(response.body().getResult()));
 
                 List<Tiket> listTiket = response.body().getResult();
-                mAdapter = new TiketAdapter(listTiket);
+                // Dapatkan adapter listTiket dengan parameter tambahan Context
+                // (karena ada AlertDialog)
+                mAdapter = new TiketAdapter(listTiket, LayarListTiket.this);
                 mRecyclerView.setAdapter(mAdapter);
             }
 

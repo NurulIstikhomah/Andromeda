@@ -75,9 +75,11 @@
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:background="@color/secondary"
             android:duplicateParentState="true"
+            android:padding="16dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/img_1" />
+            android:src="@drawable/ic_directions_subway_black_24dp" />
     </RelativeLayout>
 
 </LinearLayout>

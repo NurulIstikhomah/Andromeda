@@ -1,48 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"
+    android:layout_margin="12dp"
     android:background="@drawable/btn_secondary_bg"
-    android:orientation="vertical">
+    android:padding="16dp">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tvTujuan"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp">
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/tvTglBerangkat"
+        android:hint="Tujuan"
+        android:textAppearance="@style/teksbody"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tvNamaKereta"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginBottom="16dp"
-            android:hint="Nama Kereta"
-            android:textAppearance="@style/teksbody"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvTglBerangkat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:hint="Tgl Brgkt"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/teksbody"
+        android:textColor="@color/primary" />
 
-        <TextView
-            android:id="@+id/tvTujuan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tvNamaKereta"
-            android:hint="Tujuan"
-            android:textAppearance="@style/teksbody" />
+    <TextView
+        android:id="@+id/tvNamaKereta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTujuan"
+        android:layout_marginTop="14dp"
+        android:drawableLeft="@drawable/ic_directions_subway_black_24dp"
+        android:hint="Nama Kereta"
+        android:textAppearance="@style/teksbody"
+        android:textColor="@color/accent_dark" />
 
-        <TextView
-            android:id="@+id/tvTglBerangkat"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tvTujuan"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="14dp"
-            android:hint="Tanggal Berangkat"
-            android:textAppearance="@style/teksbody" />
-
-    </RelativeLayout>
-
-</LinearLayout>
+</RelativeLayout>
