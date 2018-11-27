@@ -3,6 +3,7 @@ package com.mcrury.app.andromeda.Adapter;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -114,8 +115,14 @@ public class TiketAdapter extends RecyclerView.Adapter<TiketAdapter.TiketViewHol
                             // Untuk sementara, asumsinya adalah:
                             // idPembeli yang login = 11
                             // totalHarga = 450000
+
+                            // Dapatkan id_pembeli yang login melalui shared pref
+                            SharedPreferences pref = mContext.getSharedPreferences
+                                    ("TokTikLoginData", Context.MODE_PRIVATE);
+                            String idPembeli = pref.getString("id_pembeli", "");
+
                             Call<PostPutDelPembelian> postPembelianCall = mApiInterface.postPembelian(
-                                    "11",
+                                    idPembeli,
                                     hariIni,
                                     "450000",
                                     listTiket.get(getAdapterPosition()).getIdTiket());
