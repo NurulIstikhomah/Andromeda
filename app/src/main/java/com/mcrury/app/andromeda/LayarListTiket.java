@@ -1,6 +1,7 @@
 package com.mcrury.app.andromeda;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -43,7 +44,14 @@ public class LayarListTiket extends AppCompatActivity {
 
     private void dapatkanData() {
         mApiInterface = ApiClient.getClient().create(ApiInterface.class);
-        Call<GetTiket> mTiketCall = mApiInterface.getTiket();
+
+        // Dapatkan idPembeli dari shared pref,
+        SharedPreferences pref = getSharedPreferences("TokTikLoginData", MODE_PRIVATE);
+        String idPembeli = pref.getString("id_pembeli", "");
+
+        // Sehingga, kita bisa dapatkan tiket yang tersedia buat user yang sedang login
+        // jangan lupa, buat juga fungsi available_post() pada REST Server yang menangkap id Pembeli
+        Call<GetTiket> mTiketCall = mApiInterface.getTiketforPembeli(idPembeli);
         mTiketCall.enqueue(new Callback<GetTiket>() {
             @Override
             public void onResponse(Call<GetTiket> call, Response<GetTiket> response) {

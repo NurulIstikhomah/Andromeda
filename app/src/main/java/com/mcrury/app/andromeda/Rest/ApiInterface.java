@@ -76,6 +76,12 @@ public interface ApiInterface {
     Call<GetTiket> getTiket();
 
     @FormUrlEncoded
+    @POST("tiket/available")
+    Call<GetTiket> getTiketforPembeli(
+            @Field("id_pembeli") String idPembeli
+    );
+
+    @FormUrlEncoded
     @POST("tiket/all")
     Call<GetTiket> postTiket(
             @Field("tujuan") String tujuan,
