@@ -27,8 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LayarHome"
-            android:theme="@style/Theme.Design.NoActionBar" />
+            android:name=".LayarHome" />
         <activity
             android:name=".LayarListTiket"
             android:label="Tiket yang Tersedia" />

@@ -1,8 +1,11 @@
 package com.mcrury.app.andromeda;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -30,6 +33,34 @@ public class LayarHome extends AppCompatActivity {
 
         // Memasukkan listener ke list kategori
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_aplikasi, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent mIntent;
+        switch (item.getItemId()) {
+
+            case R.id.menuLogout:
+
+                SharedPreferences pref = getSharedPreferences("TokTikLoginData", MODE_PRIVATE);
+                SharedPreferences.Editor editor = pref.edit();
+
+                editor.clear();
+                editor.apply();
+
+                mIntent = new Intent(this, MainActivity.class);
+                startActivity(mIntent);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
 }
