@@ -4,6 +4,7 @@ import com.mcrury.app.andromeda.Model.GetPembeli;
 import com.mcrury.app.andromeda.Model.GetPembelian;
 import com.mcrury.app.andromeda.Model.GetTiket;
 import com.mcrury.app.andromeda.Model.PostPutDelPembelian;
+import com.mcrury.app.andromeda.Model.GetLogin;
 
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
@@ -98,5 +99,13 @@ public interface ApiInterface {
     Call<GetTiket> deleteTiket(
             @Field("id_tiket") String idTiket,
             @Field("action") String action);
+
+    /********* Login *********/
+    // Ingat, tambahkan dulu fungsi login_post() pada controller Pembeli di REST server 
+    @FormUrlEncoded
+    @POST("pembeli/login")
+    Call<GetLogin> loginPembeli(
+            @Field("email") String email,
+            @Field("password") String password);
 
 }
