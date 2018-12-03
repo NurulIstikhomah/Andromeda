@@ -1,5 +1,6 @@
 package com.mcrury.app.andromeda.Rest;
 
+import com.mcrury.app.andromeda.Model.GetMyTiket;
 import com.mcrury.app.andromeda.Model.GetPembeli;
 import com.mcrury.app.andromeda.Model.GetPembelian;
 import com.mcrury.app.andromeda.Model.GetTiket;
@@ -78,6 +79,12 @@ public interface ApiInterface {
     @FormUrlEncoded
     @POST("tiket/available")
     Call<GetTiket> getTiketforPembeli(
+            @Field("id_pembeli") String idPembeli
+    );
+
+    @FormUrlEncoded
+    @POST("tiket/mytiket")
+    Call<GetMyTiket> getMyTiket(
             @Field("id_pembeli") String idPembeli
     );
 

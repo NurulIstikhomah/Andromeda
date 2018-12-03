@@ -26,11 +26,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".LayarHome" />
+        <activity android:name=".LayarHome" />
         <activity
             android:name=".LayarListTiket"
             android:label="Tiket yang Tersedia" />
+        <activity android:name=".LayarMyTiket"
+            android:label="My Tiket"/>
     </application>
 
 </manifest>

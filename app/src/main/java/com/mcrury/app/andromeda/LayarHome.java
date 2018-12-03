@@ -14,7 +14,7 @@ import android.widget.RelativeLayout;
 
 public class LayarHome extends AppCompatActivity {
 
-    RelativeLayout btnTicketList;
+    RelativeLayout btnTicketList, btnMyTicket;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,14 @@ public class LayarHome extends AppCompatActivity {
             }
         });
 
-        // Memasukkan listener ke list kategori
+        btnMyTicket = findViewById(R.id.btnMyTiket);
+        btnMyTicket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mIntent = new Intent(getApplicationContext(), LayarMyTiket.class);
+                startActivity(mIntent);
+            }
+        });
 
     }
 
